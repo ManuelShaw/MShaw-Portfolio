@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Tu Nombre</title>
+  <title>Manuel Shaw | Data Portfolio</title>
   <style>
     :root {
       --bg: #0f172a;
@@ -311,12 +311,48 @@
         justify-content: center;
       }
     }
+    .card-links {
+      display: flex;
+      gap: 12px;
+    }
+    
+    .btn-link {
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      transition: all 0.2s ease;
+    }
+    
+    /* Botón principal (Report) */
+    .btn-report {
+      background: var(--accent);
+      color: #082f49;
+      border: none;
+    }
+    
+    .btn-report:hover {
+      background: var(--accent-dark);
+      color: white;
+    }
+    
+    /* Botón secundario (Code) */
+    .btn-code {
+      color: var(--text);
+    }
+    
+    .btn-code:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a class="brand" href="#">Tu Nombre</a>
+      <a class="brand" href="#">Manuel Shaw</a>
       <nav class="nav-links">
         <a href="#projects">Proyectos</a>
         <a href="#about">Sobre mí</a>
@@ -344,16 +380,16 @@
         <aside class="hero-card">
           <h3>Resumen rápido</h3>
           <div class="stat">
-            <strong>3+</strong>
+            <strong>2</strong>
             <span>proyectos destacados para mostrar</span>
-          </div>
-          <div class="stat">
-            <strong>Power BI</strong>
-            <span>dashboards, KPIs y visualización</span>
           </div>
           <div class="stat">
             <strong>Python</strong>
             <span>limpieza, análisis y automatización</span>
+          </div>
+          <div class="stat">
+            <strong>Power BI</strong>
+            <span>dashboards, KPIs y visualización</span>
           </div>
         </aside>
       </div>
@@ -367,46 +403,29 @@
         </p>
 
         <div class="projects-grid">
+        
           <article class="card">
-            <div class="card-image">Proyecto 1</div>
+            <div class="card-image">Wine Classification (img)</div>
             <div class="card-body">
-              <h3>Dashboard comercial en Power BI</h3>
-              <p>
-                Análisis de ventas, clientes y rentabilidad con foco en indicadores clave y visualizaciones ejecutivas.
-              </p>
+              <h3>Wine Quality Classification</h3>
+                <p>
+                Binary classification project focused on predicting wine quality using a cost-sensitive evaluation framework. The objective is to mmaximize profit by prioritizing de reduction of the costly false positive values.
               <div class="tags">
-                <span class="tag">Power BI</span>
-                <span class="tag">DAX</span>
-                <span class="tag">KPIs</span>
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Data Visualization</span>
+                <span class="tag">Machine Learning</span>
+                
               </div>
               <div class="card-links">
-                <a href="#">Ver proyecto</a>
-                <a href="#">Código</a>
+                <a href="#">Report</a>
+                <a href="#">Code</a>
               </div>
             </div>
           </article>
 
           <article class="card">
             <div class="card-image">Proyecto 2</div>
-            <div class="card-body">
-              <h3>Modelo predictivo en Python</h3>
-              <p>
-                Desarrollo de un modelo para estimar resultados futuros a partir de variables históricas y validación básica.
-              </p>
-              <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">Pandas</span>
-                <span class="tag">Machine Learning</span>
-              </div>
-              <div class="card-links">
-                <a href="#">Ver proyecto</a>
-                <a href="#">Código</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-image">Proyecto 3</div>
             <div class="card-body">
               <h3>Análisis exploratorio de datos</h3>
               <p>
@@ -418,8 +437,8 @@
                 <span class="tag">Business Analysis</span>
               </div>
               <div class="card-links">
-                <a href="#">Ver proyecto</a>
-                <a href="#">Código</a>
+                <a href="#" class="btn-link btn-report">Report</a>
+                <a href="#" class="btn-link btn-code">Code</a>
               </div>
             </div>
           </article>
